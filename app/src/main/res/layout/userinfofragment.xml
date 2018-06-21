@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    style="@style/Relative_Layout">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/user_info_fragment_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 3 of 8"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/user_info_fragment_personal_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_fragment_text_view"
+            android:layout_marginLeft="4dp"
+            android:text="Personal Information"
+            android:textSize="20sp"
+            style="@style/TextView"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/user_info_fragment_personal_info_text_view">
+
+            <EditText
+                android:id="@+id/user_info_fragment_first_name"
+                android:layout_width="100dp"
+                android:hint="@string/firstname"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/user_info_fragment_middle_name"
+
+                style="@style/Edittext"/>
+
+            <EditText
+                android:id="@+id/user_info_fragment_middle_name"
+                style="@style/Edittext"
+                android:layout_width="100dp"
+                android:layout_below="@id/user_info_fragment_first_name"
+                android:hint="@string/middlename"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/user_info_fragment_last_name"/>
+
+            <EditText
+                android:id="@+id/user_info_fragment_last_name"
+                style="@style/Edittext"
+                android:layout_width="100dp"
+                android:layout_below="@id/user_info_fragment_middle_name"
+                android:hint="@string/lastname"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/user_info_fragment_zipcode"/>
+
+            <EditText
+                android:id="@+id/user_info_fragment_zipcode"
+                style="@style/Edittext"
+                android:layout_width="100dp"
+                android:layout_below="@id/user_info_fragment_last_name"
+                android:hint="@string/zipcode"
+                android:imeOptions="actionDone"
+                android:inputType="textPostalAddress"/>
+
+            <LinearLayout
+                android:id="@+id/user_info_fragment_height_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_info_fragment_zipcode"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/height"
+                    style="@style/TextView"/>
+
+                <Spinner
+                    android:id="@+id/user_info_fragment_height_ft"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:dropDownWidth="50dp"
+                    android:entries="@array/height_ft"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    style="@style/Spinner"/>
+
+
+                <Spinner
+                    android:id="@+id/user_info_fragment_height_inches"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:dropDownWidth="50dp"
+                    android:entries="@array/height_in"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    style="@style/Spinner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/user_info_fragment_height_linear_layout"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/user_info_fragment_back_button"
+                    style="@style/Button"
+                    android:text="@string/back"/>
+
+                <Button
+                    android:id="@+id/user_info_fragment_next_button"
+                    style="@style/Button"
+                    android:text="@string/next"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

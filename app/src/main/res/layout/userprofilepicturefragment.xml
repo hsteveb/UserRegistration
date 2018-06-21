@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Relative_Layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/user_info_fragment_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 7 of 8"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/user_info_fragment_personal_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_fragment_text_view"
+            android:layout_marginLeft="4dp"
+            android:text="Picture Time"
+            android:textSize="20sp"
+            style="@style/TextView"/>
+
+
+        <ImageView
+            android:id="@+id/user_profile_picture_fragment_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:elevation="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/user_profile_picture_fragment_picture_button"
+            android:layout_below="@id/user_profile_picture_fragment_image_view"
+            android:layout_centerHorizontal="true"
+            android:text="Take"
+            style="@style/Button"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/user_profile_picture_fragment_picture_button"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/user_picture_fragment_back_button"
+                android:text="@string/back"
+                style="@style/Button"/>
+            <Button
+                android:id="@+id/user_picture_fragment_next_button"
+                android:text="@string/next"
+                style="@style/Button"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

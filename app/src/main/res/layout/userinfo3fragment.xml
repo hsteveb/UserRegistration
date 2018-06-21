@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Relative_Layout">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/user_info_3_fragment_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 6 of 8"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/user_info_3_fragment_optional_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_3_fragment_text_view"
+            android:layout_marginLeft="4dp"
+            android:text="Personal Information(Optional)"
+            android:textSize="20sp"
+            style="@style/TextView"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/user_info_3_fragment_optional_text_view">
+
+            <LinearLayout
+                android:id="@+id/user_info_3_fragment_optional_info_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/race"
+                        style="@style/TextView"/>
+                    <Spinner
+                        android:id="@+id/user_info_3_fragment_race_spinner"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/race"
+                        style="@style/Spinner"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/religion"
+                        style="@style/TextView"/>
+                    <Spinner
+                        android:id="@+id/user_info_3_fragment_religion_spinner"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/Religion"
+                        style="@style/Spinner"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_info_3_fragment_optional_info_linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/user_info_3_fragment_back_button"
+                    android:text="@string/back"
+                    style="@style/Button"/>
+                <Button
+                    android:id="@+id/user_info_3_fragment_next_button"
+                    android:text="@string/next"
+                    style="@style/Button"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

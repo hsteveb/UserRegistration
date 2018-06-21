@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">UserRegistration</string>
+    <string name="email">Email</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="firstname">First name</string>
+    <string name="middlename">Middle name</string>
+    <string name="lastname">Last name</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="height">Height</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+    <string name="birthday">Birthday</string>
+    <string name="age">Age</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="race">Race</string>
+    <string name="religion">Religion</string>
+    <string name="gender">Gender</string>
+    <string name="genderpreference">Gender preference</string>
+    
+    
+    <string-array name="height_ft">
+        <item>0\'</item>
+        <item>1\'</item>
+        <item>2\'</item>
+        <item>3\'</item>
+        <item>4\'</item>
+        <item>5\'</item>
+        <item>6\'</item>
+        <item>7\'</item>
+        <item>8\'</item>
+        <item>9\'</item>
+    </string-array>
+
+    <string-array name="height_in">
+        <item>0\"</item>
+        <item>1\"</item>
+        <item>2\"</item>
+        <item>3\"</item>
+        <item>4\"</item>
+        <item>5\"</item>
+        <item>6\"</item>
+        <item>7\"</item>
+        <item>8\"</item>
+        <item>9\"</item>
+        <item>10\"</item>
+        <item>11\"</item>
+    </string-array>
+
+    <string-array name="user_gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="gender_interest">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="race">
+        <item>Select</item>
+        <item>American Indian or Alaskan Native</item>
+        <item>Asian</item>
+        <item>Black or African American</item>
+        <item>Native Hawaiian or Other Pacific Islander</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="Religion">
+        <item>Select</item>
+        <item>Christian</item>
+        <item>Catholic</item>
+        <item>Jewish</item>
+        <item>Islamic</item>
+        <item>Buddist</item>
+        <item>Hindu</item>
+    </string-array>
+</resources>
